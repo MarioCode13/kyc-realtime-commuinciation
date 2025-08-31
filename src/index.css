@@ -1,0 +1,236 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-gray-50 text-gray-900 antialiased;
+  }
+
+  * {
+    @apply border-gray-200;
+  }
+}
+
+@layer components {
+  /* Button Components */
+  .btn-primary {
+    @apply bg-kyc-600 hover:bg-kyc-700 text-white font-medium py-2.5 px-4 rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-kyc-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-medium active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-200 hover:bg-gray-300 text-gray-700 font-medium py-2.5 px-4 rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-soft active:scale-95;
+  }
+
+  .btn-success {
+    @apply bg-success-600 hover:bg-success-700 text-white font-medium py-2.5 px-4 rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-success-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-medium active:scale-95;
+  }
+
+  .btn-warning {
+    @apply bg-warning-600 hover:bg-warning-700 text-white font-medium py-2.5 px-4 rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-warning-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-medium active:scale-95;
+  }
+
+  .btn-error {
+    @apply bg-error-600 hover:bg-error-700 text-white font-medium py-2.5 px-4 rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-error-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-medium active:scale-95;
+  }
+
+  .btn-sm {
+    @apply py-2 px-3 text-sm;
+  }
+
+  .btn-lg {
+    @apply py-3 px-6 text-lg;
+  }
+
+  /* Input Components */
+  .input-field {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-kyc-500 focus:border-transparent transition-all duration-200 placeholder:text-gray-400 hover:border-gray-400;
+  }
+
+  .input-field-error {
+    @apply border-error-300 focus:ring-error-500 focus:border-transparent;
+  }
+
+  .input-field-success {
+    @apply border-success-300 focus:ring-success-500 focus:border-transparent;
+  }
+
+  /* Card Components */
+  .card {
+    @apply bg-white rounded-2xl shadow-soft border border-gray-200 p-6 transition-all duration-200 hover:shadow-medium;
+  }
+
+  .card-elevated {
+    @apply shadow-medium hover:shadow-strong;
+  }
+
+  .card-interactive {
+    @apply cursor-pointer hover:scale-[1.02] active:scale-[0.98];
+  }
+
+  /* Message Components */
+  .message-bubble {
+    @apply max-w-xs lg:max-w-md px-4 py-3 rounded-2xl mb-3 transition-all duration-200 animate-fade-in;
+  }
+
+  .message-sent {
+    @apply bg-kyc-600 text-white ml-auto shadow-medium hover:shadow-strong;
+  }
+
+  .message-received {
+    @apply bg-gray-100 text-gray-800 shadow-soft hover:shadow-medium;
+  }
+
+  .message-system {
+    @apply bg-gray-50 text-gray-600 text-center mx-auto max-w-md;
+  }
+
+  .message-error {
+    @apply bg-error-50 text-error-700 border border-error-200;
+  }
+
+  .message-success {
+    @apply bg-success-50 text-success-700 border border-success-200;
+  }
+
+  /* Layout Components */
+  .container-responsive {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-12 sm:py-16 lg:py-20;
+  }
+
+  .grid-responsive {
+    @apply grid gap-6 sm:gap-8 lg:gap-10;
+  }
+
+  /* Navigation Components */
+  .nav-link {
+    @apply text-gray-600 hover:text-kyc-600 transition-colors duration-200 font-medium;
+  }
+
+  .nav-link-active {
+    @apply text-kyc-600 font-semibold;
+  }
+
+  /* Status Components */
+  .status-badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .status-online {
+    @apply bg-success-100 text-success-800;
+  }
+
+  .status-offline {
+    @apply bg-gray-100 text-gray-800;
+  }
+
+  .status-away {
+    @apply bg-warning-100 text-warning-800;
+  }
+
+  .status-busy {
+    @apply bg-error-100 text-error-800;
+  }
+
+  /* Typography Components */
+  .heading-1 {
+    @apply text-4xl font-bold text-gray-900 leading-tight;
+  }
+
+  .heading-2 {
+    @apply text-3xl font-semibold text-gray-900 leading-tight;
+  }
+
+  .heading-3 {
+    @apply text-2xl font-semibold text-gray-900 leading-tight;
+  }
+
+  .heading-4 {
+    @apply text-xl font-semibold text-gray-900 leading-tight;
+  }
+
+  .body-large {
+    @apply text-lg text-gray-700 leading-relaxed;
+  }
+
+  .body-medium {
+    @apply text-base text-gray-700 leading-relaxed;
+  }
+
+  .body-small {
+    @apply text-sm text-gray-600 leading-relaxed;
+  }
+
+  .caption {
+    @apply text-xs text-gray-500 leading-relaxed;
+  }
+
+  /* Utility Components */
+  .divider {
+    @apply border-t border-gray-200 my-6;
+  }
+
+  .divider-vertical {
+    @apply border-l border-gray-200 mx-6;
+  }
+
+  .loading-spinner {
+    @apply animate-spin rounded-full border-2 border-gray-300 border-t-kyc-600;
+  }
+
+  .fade-in {
+    @apply animate-fade-in;
+  }
+
+  .slide-up {
+    @apply animate-slide-up;
+  }
+
+  .bounce-soft {
+    @apply animate-bounce-soft;
+  }
+}
+
+@layer utilities {
+  /* Custom scrollbar utilities */
+  .scrollbar-custom {
+    scrollbar-width: thin;
+    scrollbar-color: theme('colors.kyc.300') transparent;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    background: theme('colors.kyc.300');
+    border-radius: 3px;
+  }
+
+  /* Text utilities */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Focus utilities */
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-kyc-500 focus:ring-offset-2;
+  }
+
+  .focus-ring-error {
+    @apply focus:outline-none focus:ring-2 focus:ring-error-500 focus:ring-offset-2;
+  }
+} 

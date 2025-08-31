@@ -1,0 +1,8 @@
+# Copy to .env file to connect to my existing firebase instance or create a new database to connect to
+
+REACT_APP_FIREBASE_API_KEY=AIzaSyDdxWMYKS4kLHD1oqgcGx1fhfe3b-1bUMU
+REACT_APP_FIREBASE_AUTH_DOMAIN=kyc-realtime-demo.firebaseapp.com
+REACT_APP_FIREBASE_PROJECT_ID=kyc-realtime-demo
+REACT_APP_FIREBASE_STORAGE_BUCKET=kyc-realtime-demo.firebasestorage.app
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=503495732177
+REACT_APP_FIREBASE_APP_ID=1:503495732177:web:baa9a28a426ebd814e4ef0
