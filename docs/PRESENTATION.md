@@ -49,8 +49,8 @@ A modern web application that enables customers to seamlessly switch between des
 ### Technology Stack
 
 - **Frontend**: React 18 + TypeScript
-- **Database**: Firebase Firestore (Real-time)
-- **Styling**: Tailwind CSS (Responsive)
+- **Database**: Firebase Firestore
+- **Styling**: Tailwind CSS
 - **Deployment**: Firebase Hosting
 
 ### Architecture
@@ -59,7 +59,7 @@ For detailed technical architecture, component structure, and implementation det
 
 **Key Highlights**:
 
-- Modern client-server architecture with real-time synchronization
+- Modern client-server architecture with real-time synchronisation
 - Shared components between desktop and mobile for consistency
 - Firebase Firestore for instant cross-device communication
 - Responsive design system with custom design tokens
@@ -71,7 +71,7 @@ For detailed technical architecture, component structure, and implementation det
 ### User Experience Flow
 
 1. **Customer starts KYC** on desktop device
-2. **Needs to capture documents** (ID, selfie, etc.)
+2. **Needs to capture documents** (ID, selfie, etc.) assumed via a 3rd party application/ separated API
 3. **Switches to mobile** for better camera access
 4. **Continues seamlessly** with all progress synced
 5. **Completes verification** on preferred device
@@ -105,7 +105,7 @@ For detailed technical architecture, component structure, and implementation det
 
 ### Phase 2: Enhanced KYC Features
 
-- **Document Upload & Management**
+- **Document Upload & Management** via messaging platform opposed to 3rd party integration
 - **Multi-Step KYC Flow** with progress tracking
 - **Real-time Support Integration**
 
@@ -123,8 +123,6 @@ For complete roadmap details, see the [README.md](../README.md) file.
 
 ### Technical Risks
 
-- **Firebase Dependencies**: Vendor lock-in concerns
-  - _Mitigation_: Can migrate to self-hosted solutions
 - **Real-time Performance**: High user volume challenges
   - _Mitigation_: Firebase auto-scaling, performance monitoring
 
@@ -132,19 +130,10 @@ For complete roadmap details, see the [README.md](../README.md) file.
 
 - **User Adoption**: New workflow learning curve
   - _Mitigation_: Intuitive design, user testing
-- **Regulatory Compliance**: KYC requirements
-  - _Mitigation_: Built with compliance in mind
 
 ---
 
 ## Success Metrics
-
-### Key Performance Indicators
-
-- **KYC Completion Rate**: Target 25% improvement
-- **Drop-off Reduction**: Target 30% decrease
-- **User Satisfaction**: Target 4.5/5 rating
-- **Support Ticket Reduction**: Target 20% decrease
 
 ### Measurement Methods
 

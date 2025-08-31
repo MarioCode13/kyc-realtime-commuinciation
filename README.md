@@ -6,13 +6,13 @@ This application demonstrates real-time communication between desktop and mobile
 
 ## Architecture
 
-The app follows a modern client-server architecture with real-time synchronization:
+The app follows a modern client-server architecture with real-time synchronisation:
 
 ### Key Architectural Decisions
 
 - **React 18 + TypeScript**: Component-based architecture with type safety
 - **Tailwind CSS**: Utility-first styling for rapid development and consistency
-- **Firebase Firestore**: Real-time database with built-in synchronization
+- **Firebase Firestore**: Real-time database with built-in synchronisation
 - **Shared Components**: Single `ChatInterface` component serves both desktop and mobile
 
 ### Component Architecture
@@ -20,7 +20,7 @@ The app follows a modern client-server architecture with real-time synchronizati
 ```
 App
 ├── Router
-    ├── DesktopClient (/) - Desktop-optimized layout
+    ├── DesktopClient (/) - Desktop-optimised layout
     │   └── ChatInterface - Shared chat functionality
     │       ├── MessageBubble[] - Individual messages
     │       └── MessageInput - Message composition
@@ -32,14 +32,14 @@ App
 
 - **Frontend**: React 18 with TypeScript
 - **Styling**: Tailwind CSS with custom design tokens
-- **Real-time Database**: Firebase Firestore for instant synchronization
+- **Real-time Database**: Firebase Firestore for instant synchronisation
 - **Icons**: Lucide React for modern iconography
 - **Routing**: React Router for navigation
 - **State Management**: React hooks with custom message service
 
 ## Key Features
 
-- Real-time message synchronization between different devices
+- Real-time message synchronisation between different devices
 - Device type identification (Desktop vs Mobile)
 - Responsive design for all screen sizes
 - Professional KYC-ready interface
@@ -52,24 +52,24 @@ App
 
 ```
 src/
-├── components/          # React components
-│   ├── common/         # Shared components
-│   │   └── Navbar/     # Navigation component
-│   └── features/       # Feature-specific components
-│       └── chat/       # Chat functionality
-│           ├── ChatInterface/    # Main chat component
-│           └── MessageBubble/    # Individual message display
-├── services/            # Business logic
-│   ├── messageService.ts          # Firebase service (production)
-│   └── crossTabMessageService.ts  # Cross-browser communication (demo)
-├── firebase/            # Firebase configuration
-│   └── config.ts            # Firebase setup
-├── hooks/               # Custom React hooks
-│   ├── useMessages.ts           # Message management
-│   └── useDeviceType.ts         # Device detection
-├── types/               # TypeScript definitions
-├── pages/               # Page components
-└── App.tsx              # Main app with routing
+├── components/                     # React components
+│   ├── common/                     # Shared components
+│   │   └── Navbar/                 # Navigation component
+│   └── features/                   # Feature-specific components
+│       └── chat/                   # Chat functionality
+│           ├── ChatInterface/      # Main chat component
+│           └── MessageBubble/      # Individual message display
+├── services/                       # Business logic
+│   ├── messageService.ts           # Firebase service (production)
+│   └── crossTabMessageService.ts   # Cross-browser communication (demo)
+├── firebase/                       # Firebase configuration
+│   └── config.ts                   # Firebase setup
+├── hooks/                          # Custom React hooks
+│   ├── useMessages.ts              # Message management
+│   └── useDeviceType.ts            # Device detection
+├── types/                          # TypeScript definitions
+├── pages/                          # Page components
+└── App.tsx                         # Main app with routing
 ```
 
 ## Setup Instructions
@@ -138,7 +138,7 @@ Can now test real cross-device communication:
 
 ## Design System
 
-### Tailwind CSS Customization
+### Tailwind CSS Customisation
 
 The app uses a custom design system built on Tailwind CSS:
 
@@ -160,6 +160,7 @@ The app uses a custom design system built on Tailwind CSS:
 .input-field: Form inputs
 .card: Content containers
 .message-bubble: Chat message styling
+etc.
 ```
 
 ## Security & Production Considerations
@@ -167,14 +168,14 @@ The app uses a custom design system built on Tailwind CSS:
 ### Current Implementation
 
 - **Firebase Security Rules**: Basic read/write access for demo purposes
-- **Input Validation**: Basic sanitization of user inputs
+- **Input Validation**: Basic sanitisation of user inputs
 - **Environment Variables**: Secure configuration management
 
 ### Production Security Requirements
 
 - **User Authentication**: Implement Firebase Auth with proper user management
 - **Role-Based Access Control**: Admin vs customer permissions
-- **Input Sanitization**: Comprehensive validation and sanitization
+- **Input Sanitisation**: Comprehensive validation and sanitisation
 - **Rate Limiting**: Prevent abuse and spam
 - **Data Encryption**: End-to-end encryption for sensitive KYC data
 
@@ -218,18 +219,13 @@ The app uses a custom design system built on Tailwind CSS:
 - [ ] **Notifications**
 
   - Email notifications
-  - Customizable notification preferences
+  - Customisable notification preferences
 
 - [ ] **Analytics & Reporting**
 
   - User behavior tracking
   - Conversion funnel analysis
   - Performance metrics dashboard
-
-- [ ] **Multi-language Support**
-  - Internationalization (i18n)
-  - Localized content and forms
-  - Regional compliance requirements
 
 ### Phase 4: Enterprise Features
 
@@ -248,20 +244,19 @@ The app uses a custom design system built on Tailwind CSS:
   - Load balancing and auto-scaling
   - Multi-region deployment
 
-## Performance Optimizations
+## Performance Optimisations
 
-### Current Optimizations
+### Current Optimisations
 
 - **Message Pagination**: Limit to last 100 messages
-- **Efficient Updates**: Only update changed messages
-- **Responsive Design**: Optimized for different screen sizes
+- **Responsive Design**: Optimised for different screen sizes
 
 ### Planned Optimizations
 
 - **Virtual Scrolling**: For large message lists
 - **Message Caching**: Client-side message storage
 - **Lazy Loading**: Load components on demand
-- **Bundle Optimization**: Code splitting and tree shaking
+- **Bundle Optimisation**: Code splitting and tree shaking
 
 ## Testing Strategy
 
@@ -286,7 +281,7 @@ The app uses a custom design system built on Tailwind CSS:
 
 ### Production
 
-- **Build Process**: Optimized production builds
+- **Build Process**: Optimised production builds
 - **Firebase Hosting**: Global CDN deployment
 - **Environment Management**: Production Firebase configuration
 - **Monitoring**: Application performance and error tracking
