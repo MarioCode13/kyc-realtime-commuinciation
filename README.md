@@ -84,14 +84,14 @@ src/
 
 1. **Clone the repository**
 
-   ```bash
-   git clone <repository-url>
+   ```
+   git clone https://github.com/MarioCode13/kyc-realtime-commuinciation.git
    cd kyc-realtime-communication
    ```
 
 2. **Install dependencies**
 
-   ```bash
+   ```
    npm install
    ```
 
@@ -99,7 +99,7 @@ src/
 
    Create a `.env` file in the root directory with your Firebase credentials:
 
-   ```bash
+   ```
    REACT_APP_FIREBASE_API_KEY=your_firebase_api_key_here
    REACT_APP_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
    REACT_APP_FIREBASE_PROJECT_ID=your_project_id
@@ -110,7 +110,7 @@ src/
 
 4. **Start the development server**
 
-   ```bash
+   ```
    npm start
    ```
 
